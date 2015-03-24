@@ -1,5 +1,13 @@
 #Nfe Focus - Emissão de Nota Fiscal Eletrônica
 ## Atualmente para empresas do simples nacional - SP
+## Instalação - Composer (psr-4)
+```json
+{
+  "require": {
+    "dindigital/nfe-focus": "dev-master"
+  }
+}
+```
 ### Definição de vendedor
 ```php
 $issuer = new Issuer;
@@ -19,7 +27,7 @@ $issuerAddress->setState('SP');
 $issuerAddress->setZipCode('09015-010');
 
 // Adiciono endereço do vendedor ao vendedor
-$issuer>setAddress($issuerAddress);
+$issuer->setAddress($issuerAddress);
 ```
 ### Definição de cliente
 ```php
@@ -89,3 +97,10 @@ if ($transaction->cancel('referencia')) { // OK
   //$transaction->getResponseBody();
 }
 ```
+
+# Usando os exemplos
+1. Renomeie o arquivo exemples/config.php.dist para config.php
+2. Preencha com as informações de cadastro da FOCUS
+3. Acesse o arquivo /exemples/insert.php e anote a **referencia**
+4. Acesse o arquivo /exemples/find.php?ref=**referencia_do_insert**
+5. Acesse o arquivo /exemples/cancel.php?ref=**referencia_do_insert**

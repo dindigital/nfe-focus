@@ -1,0 +1,26 @@
+{
+  "name": "dindigital/nfe-focus",
+  "description": "Nfe Focus - Emissão de Nota Fiscal Eletrônica",
+  "keywords": ["nfe", "nota fiscal", "nota fiscal php", "nfe php", "focus nfe"],
+  "type": "library",
+  "homepage": "https://github.com/dindigital/nfe-focus",
+  "require": {
+      "respect/validation": "dev-master",
+      "symfony/yaml": "2.*",
+      "zendframework/zend-http": "2.*"
+  },
+  "require-dev": {
+      "phpunit/phpunit": "4.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "NfeFocus\\": "library/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Mario Mello",
+      "email": "mario@dindigital.com"
+    }
+  ]
+}
