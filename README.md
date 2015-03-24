@@ -8,6 +8,7 @@
   }
 }
 ```
+#### Para visualizar os exemplos [acesse](https://github.com/dindigital/nfe-focus/tree/master/examples)
 ### Definição de vendedor
 ```php
 $issuer = new Issuer;
