@@ -18,7 +18,6 @@ class Nfse {
           "natureza_operacao" => 'Remessa de Produtos',
           "forma_pagamento" => 0,
           "data_emissao" => $datetime->format(DateTime::ATOM),
-          "data_entrada_saida" => date('Y-m-d'),
           "tipo_documento" => 1,
           "finalidade_emissao" => 1,
           "cnpj_emitente" => $issuer->getCompanyDocument(),

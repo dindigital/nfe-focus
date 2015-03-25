@@ -91,7 +91,6 @@ class NfseTest extends \PHPUnit_Framework_TestCase
           "natureza_operacao" => 'Remessa de Produtos',
           "forma_pagamento" => 0,
           "data_emissao" => '2015-03-20T12:00:00-03:00',
-          "data_entrada_saida" => date('Y-m-d'),
           "tipo_documento" => 1,
           "finalidade_emissao" => 1,
           "cnpj_emitente" => '47377613000106',
