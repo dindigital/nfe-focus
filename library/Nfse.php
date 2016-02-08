@@ -77,6 +77,12 @@ class Nfse {
         $this->_nfse['forma_pagamento'] = $option;
     }
 
+    public function setInformation($text)
+    {
+        $this->_nfse['informacoes_adicionais_contribuinte'] = $text;
+
+    }
+
     public function getNfse()
     {
         return $this->_nfse;
