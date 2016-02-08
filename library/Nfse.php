@@ -61,6 +61,22 @@ class Nfse {
         );
     }
 
+    public function setNatureOperations($title)
+    {
+        $this->_nfse['natureza_operacao'] = $title;
+    }
+
+    /**
+     * @param $option
+     *  - 0 a vista
+     *  - 1 a prazo
+     *  - 2 outros
+     */
+    public function setPayment($option)
+    {
+        $this->_nfse['forma_pagamento'] = $option;
+    }
+
     public function getNfse()
     {
         return $this->_nfse;
