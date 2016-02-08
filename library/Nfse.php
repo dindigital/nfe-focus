@@ -63,7 +63,7 @@ class Nfse {
 
     public function setNatureOperations($title)
     {
-        $this->_nfse['natureza_operacao'] = $title;
+        $this->_nfse['natureza_operacao'] = substr($title,0,60);
     }
 
     /**
