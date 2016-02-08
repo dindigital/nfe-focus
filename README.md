@@ -4,10 +4,13 @@
 ```json
 {
   "require": {
-    "dindigital/nfe-focus": "dev-master"
+    "dindigital/nfe-focus": "2.*"
   }
 }
 ```
+## Documentação da Focus
+- https://focusnfe.com.br/api/doc/nfe/
+- https://focusnfe.com.br/nfe/lang/NotaFiscalXML.html
 #### Para visualizar os exemplos [acesse](https://github.com/dindigital/nfe-focus/tree/master/examples)
 ### Definição de vendedor
 ```php

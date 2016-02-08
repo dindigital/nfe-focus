@@ -5,7 +5,7 @@
   "type": "library",
   "homepage": "https://github.com/dindigital/nfe-focus",
   "require": {
-      "respect/validation": "dev-master",
+      "respect/validation": "0.9.*",
       "symfony/yaml": "2.*",
       "zendframework/zend-http": "2.*"
   },
