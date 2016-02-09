@@ -42,6 +42,18 @@ class Item {
 
     }
 
+    public function setProductCode($code)
+    {
+        $this->_data['codigo_produto'] = $code;
+
+    }
+
+    public function setUnit($unit)
+    {
+        $this->_data['unidade_comercial'] = $unit;
+
+    }
+
     public function setNcmCode($ncm)
     {
         $this->_data['codigo_ncm'] = $ncm;
