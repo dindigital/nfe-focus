@@ -10,6 +10,7 @@ class Receiver {
 
     private $_document_cpf;
     private $_document_cnpj;
+    private $_stateRegistration;
     private $_name;
     private $_address;
     private $_email;
@@ -52,6 +53,23 @@ class Receiver {
     public function getDocumentCNPJ()
     {
         return $this->_document_cnpj;
+
+    }
+
+    public function setStateRegistration($value)
+    {
+        if (v::string()->notEmpty()->validate($value)) {
+            $value = preg_replace('/\D/', '', $value);
+        } else {
+            $value = 'ISENTO';
+        }
+
+        $this->_stateRegistration = $value;
+    }
+
+    public function getStateRegistration()
+    {
+        return $this->_stateRegistration;
 
     }
 

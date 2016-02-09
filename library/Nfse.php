@@ -34,7 +34,7 @@ class Nfse {
           "nome_destinatario" => $receiver->getName(),
           "cnpj_destinatario" => $receiver->getDocumentCNPJ(),
           "cpf_destinatario" => $receiver->getDocumentCPF(),
-          "inscricao_estadual_destinatario" => 'ISENTO',
+          "inscricao_estadual_destinatario" => $receiver->getStateRegistration(),
           "telefone_destinatario" => '',
           "email_destinatario" => $receiver->getEmail(),
           "logradouro_destinatario" => $receiver->getAddress()->getStreet(),

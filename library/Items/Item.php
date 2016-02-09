@@ -38,7 +38,6 @@ class Item {
     public function setCfop($cfop)
     {
         $this->_data['cfop'] = $cfop;
-        $this->_data['codigo_produto'] = $cfop;
 
     }
 
