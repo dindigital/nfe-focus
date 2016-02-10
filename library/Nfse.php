@@ -77,6 +77,18 @@ class Nfse {
         $this->_nfse['forma_pagamento'] = $option;
     }
 
+    /**
+     * @param $option
+     *  - 1 Nota normal
+     *  - 2 Nota complementar
+     *  - 3 Nota de ajuste
+     *  - 4 Devolução de mercadoria
+     */
+    public function setOrderIssue($option)
+    {
+        $this->_nfse['finalidade_emissao'] = $option;
+    }
+
     public function setInformation($text)
     {
         $this->_nfse['informacoes_adicionais_contribuinte'] = $text;
