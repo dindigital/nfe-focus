@@ -18,7 +18,7 @@ class ItemContainer {
     public function addItem(Item $item)
     {
         $item->setItemNumber($this->_item_number);
-        $item->setCfop($this->_cfop);
+        //$item->setCfop($this->_cfop);
         $this->_items[] = $item;
         $this->_item_number++;
     }
