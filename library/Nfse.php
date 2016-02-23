@@ -95,6 +95,16 @@ class Nfse {
 
     }
 
+    public function setSerie($serie)
+    {
+        $this->_nfse['serie'] = $serie;
+    }
+
+    public function setNumero($numero)
+    {
+        $this->_nfse['numero'] = $numero;
+    }
+
     public function getNfse()
     {
         return $this->_nfse;
