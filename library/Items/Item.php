@@ -73,6 +73,16 @@ class Item {
         $this->_data['valor_bruto'] = $price * $this->_data['quantidade_comercial'];
     }
 
+    public function setPurchaseOrder($purchase_order)
+    {
+        $this->_data['pedido_compra'] = $purchase_order;
+    }
+
+    public function setNumberItemPurchaseOrder($number_item)
+    {
+        $this->_data['numero_item_pedido_compra'] = $number_item;
+    }
+
     public function getTotalCost()
     {
         return $this->_data['valor_bruto'];
