@@ -12,7 +12,9 @@ class Nfse {
     public function __construct( DateTime $datetime,
                                  Issuer $issuer,
                                  Receiver $receiver,
-                                 Items\ItemContainer $items) {
+                                 Items\ItemContainer $items,
+                                 Duplicatas\DuplicatasContainer $duplicatas = null
+                                ) {
 
         $this->_nfse = array(
           "natureza_operacao" => 'Remessa de Produtos',
@@ -59,6 +61,11 @@ class Nfse {
           "informacoes_adicionais_contribuinte" => '',
           "items" => $items->getItems()
         );
+
+        if (!is_null($duplicatas) ** $duplicatas->count()) {
+            $this->_nfse['duplicatas'] = $duplicatas->getDuplicatas();
+        }
+
     }
 
     public function setNatureOperations($title)
