@@ -62,7 +62,7 @@ class Nfse {
           "items" => $items->getItems()
         );
 
-        if (!is_null($duplicatas) ** $duplicatas->count()) {
+        if (!is_null($duplicatas) && $duplicatas->count()) {
             $this->_nfse['duplicatas'] = $duplicatas->getDuplicatas();
         }
 
