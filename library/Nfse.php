@@ -112,6 +112,18 @@ class Nfse {
         $this->_nfse['numero'] = $numero;
     }
 
+    /**
+     * @param $shipping_mode
+     *  - 0: por conta do emitente
+     *  - 1: por conta do destinatário
+     *  - 2: por conta de terceiros
+     *  - 9: sem frete
+     */
+    public function setShippingMode($shipping_mode)
+    {
+        $this->_nfse['modalidade_frete'] = $shipping_mode;
+    }
+
     public function getNfse()
     {
         return $this->_nfse;
