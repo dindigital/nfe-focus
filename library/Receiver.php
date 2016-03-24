@@ -97,6 +97,15 @@ class Receiver {
 
     }
 
+    public function setAlternativeEmail($value)
+    {
+        if (!v::email()->validate($value))
+            throw new FieldRequiredException("E-mail alternativo inválido");
+
+        $this->_email .= "," . $value;
+
+    }
+
     public function getEmail()
     {
         return $this->_email;
